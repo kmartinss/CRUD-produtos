@@ -24,6 +24,11 @@
       "name": "Geladeira",
       "price": "1494.94",
       "id": 5
+    },
+    {
+      "name": "Cabeceira Cinza",
+      "price": "129.00",
+      "id": 6
     }
   ]
 }
