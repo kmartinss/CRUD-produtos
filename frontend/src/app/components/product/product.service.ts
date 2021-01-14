@@ -24,21 +24,26 @@ export class ProductService {
    })
   }
 
-  create(product: Product): Observable<Product> {
+  public create(product: Product): Observable<Product> {
     return this._http.post<Product>(this.baseUrl, product)
   }
 
-  read(): Observable<Product[]> {
+  public read(): Observable<Product[]> {
     return this._http.get<Product[]>(this.baseUrl)
   }
 
-  readById(id: string): Observable<Product> {
-    const url = `${this.baseUrl}/${id}`
+  public readById(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
     return this._http.get<Product>(url);
   }
 
-  update(product: Product): Observable<Product> {
-    const url = `${this.baseUrl}/${product.id}`
+  public update(product: Product): Observable<Product> {
+    const url = `${this.baseUrl}/${product.id}`;
     return this._http.put<Product>(url, product);
+  }
+
+  public delete(id: string): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this._http.delete<Product>(url);
   }
 }

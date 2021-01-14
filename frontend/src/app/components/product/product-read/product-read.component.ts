@@ -10,7 +10,7 @@ import { ProductService } from '../product.service';
 export class ProductReadComponent implements OnInit {
 
   products: Product[];
-  displayedColumns = ['id', 'name', 'price', 'action']
+  displayedColumns = ['id', 'name', 'price', 'action'];
 
   constructor(
     private _productService: ProductService
@@ -18,9 +18,8 @@ export class ProductReadComponent implements OnInit {
 
   ngOnInit(): void {
     this._productService.read().subscribe(products => {
-      this.products = products
+      this.products = products;
       console.log(products);
-    })
+    });
   }
-
 }
