@@ -29,6 +29,16 @@
       "name": "Cabeceira Cinza",
       "price": "129.00",
       "id": 6
+    },
+    {
+      "name": "Alerta verde",
+      "price": "200",
+      "id": 7
+    },
+    {
+      "name": "Sucesso",
+      "price": "3000",
+      "id": 8
     }
   ]
 }
